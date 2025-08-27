@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+         <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-X9E8Z14D8R"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-X9E8Z14D8R');
+</script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MSBTE QP</title>
+    <link href="/output.css" rel="stylesheet">
+  
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-polyfill/7.12.1/polyfill.min.js"></script>
+
+
+</head>
+<body class="bg-[#000511] text-white">
+
+  <nav class="bg-[#000511] text-white p-4 shadow-md w-full z-50 fixed top-0 left-0">
+    <div class="flex justify-between items-center w-full px-4">
+      <div class="text-2xl font-bold">
+        <a href="/index.html">MSBTE QP</a>
+      </div>
+      <div id="menu-icon-container" class="lg:hidden flex items-center">
+        <button id="menu-icon" class="text-white focus:outline-none">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+          </svg>
+        </button>
+      </div>
+      <div id="close-menu-container" class="lg:hidden flex items-center hidden">
+        <button id="close-menu" class="text-white text-3xl">
+          &times;
+        </button>
+      </div>
+      <div class="hidden lg:flex space-x-6">
+        <a href="/" class="hover:text-gray-300">Home</a>
+        <a href="/about-us.html" class="hover:text-gray-300">About Us</a>
+        <a href="/contact-us.html" class="hover:text-gray-300">Contact Us</a>
+      </div>
+    </div>
+  </nav>
+
+  <div id="mobile-menu" class="lg:hidden hidden fixed top-0 left-0 w-full h-full bg-[#000511] text-white flex flex-col items-center justify-center space-y-6 p-6 transform translate-y-[-100%] transition-transform duration-500 ease-in-out z-40">
+    <a href="/" class="hover:text-gray-300">Home</a>
+    <a href="/about-us.html" class="hover:text-gray-300">About</a>
+    <a href="/contact-us.html" class="hover:text-gray-300">Contact</a>
+  </div>
+
+  <div class="pt-20 px-4">
+    <h1 class="text-5xl font-bold text-center text-white py-8">
+      MSBTE Previous Question Papers
+    </h1>
+    <p class="text-xl text-center text-gray-300">
+      Access previous exam papers for all MSBTE courses to help you prepare better.
+    </p>
+  </div>
+
+<div class="bg-[#000511] text-white py-8">
+  <h2 class="text-3xl font-bold text-center">Departments Offering Diploma Courses</h2>
+  <div class="text-center mb-8">
+    <label for="department-filter" class="text-lg">Filter by Department:</label>
+    <select id="department-filter" name="branch" class="bg-[#222] text-white py-2 px-4 rounded-lg mt-2 w-3/4 sm:w-1/2 lg:w-1/4" onchange="filterDepartments()">
+      <option value="">Show All</option>
+      <option value="computer-engineering">Computer Engineering</option>
+      <option value="mechanical-engineering">Mechanical Engineering</option>
+      <option value="civil-engineering">Civil Engineering</option>
+      <option value="electrical-engineering">Electrical Engineering</option>
+      <option value="electronics-telecommunication">Electronic and Telecommunication Engineering</option>
+      <option value="automobile-engineering">Automobile Engineering</option>
+      <option value="industrial-electronics">Industrial Electronics</option>
+      <option value="textile-technology">Textile Technology</option>
+      <option value="production-engineering">Production Engineering</option>
+      <option value="information-technology">Information Technology</option>
+      <option value="chemical-engineering">Chemical Engineering</option>
+      
+    </select>
+  </div>
+</div>
+
+
+
+  <div class="bg-[#000511] text-white py-8">
+    <div id="departments" class="flex flex-wrap justify-center gap-8 mt-8">
+      <a href="department/computer-engineering.html" class="department bg-[#1E2A47] p-6 rounded-lg w-72 text-center hover:bg-[#3B4F76] transition-colors" id="computer-engineering">
+        <h3 class="text-2xl font-semibold">Computer Engineering</h3>
+      </a>
+      <a href="department/mechanical-engineering.html" class="department bg-[#1E2A47] p-6 rounded-lg w-72 text-center hover:bg-[#3B4F76] transition-colors" id="mechanical-engineering">
+        <h3 class="text-2xl font-semibold">Mechanical Engineering</h3>
+      </a>
+      <a href="department/civil-engineering.html" class="department bg-[#1E2A47] p-6 rounded-lg w-72 text-center hover:bg-[#3B4F76] transition-colors" id="civil-engineering">
+        <h3 class="text-2xl font-semibold">Civil <br>Engineering</h3>
+      </a>
+      <a href="department/electrical-engineering.html" class="department bg-[#1E2A47] p-6 rounded-lg w-72 text-center hover:bg-[#3B4F76] transition-colors" id="electrical-engineering">
+        <h3 class="text-2xl font-semibold">Electrical<br> Engineering</h3>
+      </a>
+      <a href="department/electronics-and-telecommunication-engineering.html" class="department bg-[#1E2A47] p-6 rounded-lg w-72 text-center hover:bg-[#3B4F76] transition-colors" id="electronics-telecommunication">
+        <h3 class="text-2xl font-semibold">Electronic and Telecommunication Engineering</h3>
+      </a>
+      <a href="/department/automobile-engineering.html" class="department bg-[#1E2A47] p-6 rounded-lg w-72 text-center hover:bg-[#3B4F76] transition-colors" id="automobile-engineering">
+        <h3 class="text-2xl font-semibold">Automobile Engineering</h3>
+      </a>
+      <a href="/department/industrial-electronics.html" class="department bg-[#1E2A47] p-6 rounded-lg w-72 text-center hover:bg-[#3B4F76] transition-colors" id="industrial-electronics">
+        <h3 class="text-2xl font-semibold">Industrial <br>Electronics</h3>
+      </a>
+      <a href="/department/production-ngineering.html" class="department bg-[#1E2A47] p-6 rounded-lg w-72 text-center hover:bg-[#3B4F76] transition-colors" id="production-ngineering">
+        <h3 class="text-2xl font-semibold">Production Engineering</h3>
+      </a>
+      <a href="department/textile-technology.html" class="department bg-[#1E2A47] p-6 rounded-lg w-72 text-center hover:bg-[#3B4F76] transition-colors" id="textile-technology">
+        <h3 class="text-2xl font-semibold">Textile Technology</h3>
+      </a>
+      <a href="department/production-engineering.html" class="department bg-[#1E2A47] p-6 rounded-lg w-72 text-center hover:bg-[#3B4F76] transition-colors" id="production-engineering">
+        <h3 class="text-2xl font-semibold">Production Engineering</h3>
+      </a>
+      <a href="department/information-technology.html" class="department bg-[#1E2A47] p-6 rounded-lg w-72 text-center hover:bg-[#3B4F76] transition-colors" id="information-technology">
+        <h3 class="text-2xl font-semibold">Information Technology</h3>
+      </a>
+      <a href="department/chemical-engineering.html" class="department bg-[#1E2A47] p-6 rounded-lg w-72 text-center hover:bg-[#3B4F76] transition-colors" id="chemical-engineering">
+        <h3 class="text-2xl font-semibold">Chemical Engineering</h3>
+      </a>
+      
+    </div>
+  </div>
+  <footer class="bg-[#000511] text-white py-10 mt-8">
+    <div class="max-w-screen-xl mx-auto px-6">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div>
+          <h3 class="text-xl font-bold mb-4">Contact Information</h3>
+          <p>Email: contactus@msbteqp.avibey.com</p>
+        </div>
+
+        <div>
+          <h3 class="text-xl font-bold mb-4">Follow Us</h3>
+          <div class="flex space-x-6">
+            <a href="#" class="text-white hover:text-gray-300">
+              <i class="fa-brands fa-discord w-6 h-6"></i>
+            </a>
+            <a href="#" class="text-white hover:text-gray-300">
+              <i class="fa-brands fa-github w-6 h-6"></i>
+            </a>
+          </div>
+        </div>
+
+        <div>
+          <h3 class="text-xl font-bold mb-4">Quick Links</h3>
+          <ul>
+            <li><a href="/" class="hover:text-gray-300">Home</a></li>
+            <li><a href="/about-us.html" class="hover:text-gray-300">About</a></li>
+            <li><a href="/privacy-policy.html" class="hover:text-gray-300">Privacy Policy</a></li>
+            <li><a href="/contact-us.html" class="hover:text-gray-300">Contact Us</a></li>
+            <li><a href="/terms-and-conditions.html" class="hover:text-gray-300">Terms & Conditions</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h3 class="text-xl font-bold mb-4">More Information</h3>
+          <p class="text-sm">© 2025 MSBTE. All rights reserved.</p>
+          <p class="text-sm">Made by Avinash</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+
+function filterDepartments() {
+  const filterValue = document.getElementById("department-filter").value;
+  const departments = document.querySelectorAll('.department');
+
+  departments.forEach(department => {
+    if (filterValue === "" || department.id === filterValue) {
+      department.classList.remove('hidden');
+    } else {
+      department.classList.add('hidden');
+    }
+  });
+}
+  </script>
+<script src="/js/script.js"> </script>
+</body>
+</html>
